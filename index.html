@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson_16</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="main">
+         <div class="page">
+            <div class="page__container">
+               <div class="page__row">
+                  <div class="page__column column column_bg">
+                     <form class="form" action="#">
+                        <div class="form__headline"><label>Make an appointment</label></div>
+                        <div class="form__row">
+                           <input class="form__name" required name="username" placeholder="Name" value="" type="text">
+                           <input class="form__email" required name="useremail" placeholder="Email" value="" type="email">
+                           <input class="form__tel" required name="usertel" placeholder="Phone Number" value="" type="tel">
+                           <input class="form__select" required name="userservice" placeholder="Select Service" value="" type="text">
+                           <textarea class="form__tell-us" name="tell-us" id="" cols="30" rows="10" placeholder="Tell us about your puppers include his/her name"></textarea>
+                        </div>
+                        <div class="form__button button">
+                           <button class="button__submit" type="submit">Make an Appointment</button>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="page__column column">
+                     <div class="column__content">
+                        <div class="column__title">Maxime placeat facere possimus omnis </div>
+                        <div class="column__about">5,700+</div>
+                        <div class="column__text">customers served</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="summary">
+            <div class="summary__container summary__container_margin">
+               <div class="summary__title">Summary</div>
+               <div class="summary__subtitle">Estimate Shipping and Tax</div>
+               <div class="summary__text">Enter your destination to get a shipping estimate.</div>
+               <form class="summary__form form-summary" action="#">
+                  <label class="form-summary__label" for="country">Country</label>
+                  <select id="country" class="form-summary__country">
+                     <option selected class="form-summary__value" value="1">Australia</option>
+                     <option class="form-summary__value" value="2">Argentina</option>
+                     <option class="form-summary__value" value="3">Greece</option>
+                     <option class="form-summary__value" value="4">Brazil</option>
+                     <option class="form-summary__value" value="5">Canada</option>
+                     <option class="form-summary__value" value="6">Czech Republic</option>
+                     <option class="form-summary__value" value="7">France</option>
+                     <option class="form-summary__value" value="8">Poland</option>
+                     <option class="form-summary__value" value="9">Ukraine</option>
+                     <option class="form-summary__value" value="10">United Kingdom</option>
+                  </select>
+                  <label class="form-summary__label" for="state">State/Province</label>
+                  <input class="form-summary__state line" id="state" required type="text">
+                  <label class="form-summary__label" for="zip">Zip/Postal Code</label>
+                  <input class="form-summary__zip line" id="zip" type="text">
+                  <label class="form-summary__label" for="rate">Standard Rate</label>
+                  <div class="form-summary__radiobuttons">
+                     <input class="form-summary__radiobutton" id="rate" name="rate" value="contact" type="radio">
+                     <label class="form-summary__rate" for="rate">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+                  </div>
+                  <label class="form-summary__label" for="rate">Pickup from store</label>
+                  <div class="form-summary__radiobuttons">
+                     <input class="form-summary__radiobutton" id="rate" name="rate" value="pick-up" type="radio">
+                     <label class="form-summary__rate" for="rate">1234 Street Adress City Address, 1234 $0.00</label>
+                  </div>
+                  <div class="summary__subtitle">Apply Discount Code</div>
+                  <label class="form-summary__label" for="code">Enter discount code</label>
+                  <input class="form-summary__code line" id="code" required type="text" placeholder="Enter discount code">
+                  <div class="apply">
+                     <button class="apply__button" type="submit">Apply Discount</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="customers">
+            <div class="customers__container">
+               <div class="customers__title">Registered Customers</div>
+               <div class="customers__text">If you have an account, sign in with your email address.</div>
+               <div class="customers__item">
+                  <label class="customers__lable" for="email">Email</label>
+                  <input class="customers__input" required id="email" placeholder="Your Name" type="email">
+               </div>
+               <div class="customers__item">
+                  <label class="customers__lable" for="password">Password</label>
+                  <input class="customers__input" required id="password" placeholder="Your Name" type="password">
+               </div>
+               <div class="customers__footer footer">
+                  <button class="footer__click" type="submit">Sign In</button>
+                  <a class="footer__link" href="#">Forgot Your Password?</a>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+</html>
+

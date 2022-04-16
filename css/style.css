@@ -1,0 +1,335 @@
+@import url(../css/null.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+
+}
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
+}
+.main {
+   background: url(../img/page/background.jpg) 0 0 no-repeat;
+}
+.page {
+}
+.page__container {
+   max-width: 1040px;
+   margin: 0 auto;
+   padding: 130px 10px 210px 10px;
+}
+.page__row {
+   display: flex;
+   /* justify-content: space-between; */
+   gap: 110px;
+   flex-wrap: wrap;
+   flex: 0 0 50%;
+}
+.page__column {
+}
+.column {
+   color: #fff;
+   text-align: center;
+   font-family: "Roboto";
+   font-weight: 400;
+   align-self: center;
+}
+.column_bg {
+   background: #5D62B5;
+   border-radius: 40px;
+   padding: 70px 50px;
+   z-index: 20;
+
+}
+.form {
+   max-width: 480px; 
+   position: relative;
+   z-index: 20;
+}
+.page__container::before{
+   content: "";
+   background: url(../img/page/circle.png) 0 0 no-repeat;
+   width: 335px;
+   height: 565px;
+   position: absolute;
+   bottom: -145px;
+   left: 100px;
+}
+.page__container::after{
+   content: "";
+   background: url(../img/page/blob.svg) 0 0 no-repeat;
+   width: 640px;
+   height: 920px;
+   position: absolute;
+   top: 30px;
+   left: 0px;
+} 
+
+.form__headline {
+   font-weight: 900;
+   font-size: 36px;
+   line-height: 1.16;
+   
+}
+.form__headline:not(:last-child){
+   margin: 0 0 43px 0;
+}
+.form__row{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   
+}
+.form__row > *{
+   background: #5D62B5;
+   padding: 10px 15px;
+   border: 1px solid #FFFFFF;
+   border-radius: 10px;
+   font-size: 16px;
+   line-height: 1.5;
+}
+.form__name {
+}
+.form__email {
+}
+.form__tel {
+}
+.form__select {
+}
+.form__tell-us {
+   flex: 1 0 100%;
+   resize: none;
+}
+.form__button {
+   margin: 35px 0 0 0;
+}
+/* Кнопке задано отступ сверху чтобы при удалении отступ тоже исчезал. Так ведь правильно? */
+
+.button {
+}
+.button__submit {
+   font-weight: 700;
+   font-size: 12px;
+   text-transform: uppercase;
+   line-height: 2;
+   color: #FFFFFF;
+   background-color: #F2726F;
+   border-radius: 8px;
+   padding: 10px 20px;
+   cursor: pointer;
+   max-width: 210px;
+   transform: translate(70%, 0%);
+}
+.column__content {
+   font-weight: 900;
+   max-width: 324px;
+   align-items: right;
+}
+
+.column__content div:not(:last-child) {
+   margin: 0 0 46px 0;
+}
+.column__title {
+   font-size: 30px;
+   line-height: 1.2;
+}
+.column__about {
+   font-size: 96px;
+}
+.column__text {
+   font-size: 19px;
+   line-height: 1.36;
+}
+
+
+/* ============================== */
+
+.summary {
+}
+.summary__container {
+   max-width: 446px;
+   margin: 0 auto;
+   font-family: "Poppins";
+   font-weight: 400;
+   font-size: 14px;
+   background-color: #F5F7FF;
+   padding: 17px 32px;
+}
+.summary__title {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.5;
+   margin: 0 0 18px 0;
+}
+.summary__subtitle {
+   font-size: 18px;
+   line-height: 1.5;
+   margin: 0 0 13px 0;
+}
+.summary__text {
+   color: #666666;
+   line-height: 1.5;
+   margin: 0 0 13px 0;
+}
+.summary__form {
+}
+.form-summary {
+}
+
+.form-summary__label {
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 2.1;
+   display: block;
+}
+.form-summary__country {
+   height: 50px;
+   width: 385px;
+   background-color: #FFFFFF;
+   border-radius: 4px;
+   border: 1px solid #A2A6B0;
+}
+.form-summary__value {
+}
+.form-summary__state {
+}
+.form-summary__zip {
+}
+
+.form-summary__radiobuttons {
+   display: flex;
+   align-self: flex-start;
+   position: relative;
+   margin: 0 0 10px 0;
+}
+.form-summary__radiobutton {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   opacity: 0;
+}
+.form-summary__radiobutton:checked + .form-summary__rate::after{
+   transform: scale(1);
+}
+.form-summary__rate {
+   display: flex;
+   column-gap: 10px;
+   align-items: center;
+   cursor: pointer;
+   line-height: 1.4;
+}
+.form-summary__rate::before{
+   content: "";
+   align-self: flex-start;
+   flex: 0 0 20px;
+   height: 20px;
+   border: 2px solid #0156FF;
+   border-radius: 50%;
+   background-color: white;
+}
+.form-summary__rate::after{
+   content: "";
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: #0156FF;
+   position: absolute;
+   top: 5px;
+   left: 5px;
+   transform: scale(0);
+}
+
+.line{
+   padding: 0 10px;
+   height: 50px;
+   width: 385px;
+   background-color: #FFFFFF;
+   border-radius: 4px;
+   border: 1px solid #A2A6B0;
+   font-size: 14px;
+}
+
+.apply {
+}
+.apply__button {
+   margin: 20px 0 0 0;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 1.5;
+   text-align: center;
+   cursor: pointer;
+   color: #0156FF;
+   border: 2px solid #0156FF;
+   background-color: #F5F7FF;
+   border-radius: 50px;
+   padding: 15px 100px;
+   transform: translate(10%, 0%);
+}
+
+
+/* ======================= */
+.customers {
+}
+.customers__container {
+   max-width: 565px;
+   margin: 0 auto;
+   background: #F5F7FF;
+   padding: 37px 57px 40px 57px;
+   font-family: "Roboto";
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 2.14;
+}
+.customers__title {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 1.5;
+   margin: 0 0 10px 0;
+}
+.customers__text {
+   margin: 0 0 10px 0;
+   max-width: 445px;
+}
+.customers__item:not(:last-child) {
+   margin: 0 0 10px 0;
+}
+.customers__lable {
+   display: block;
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 2.1;
+   max-width: 165px;
+}
+.customers__input {
+   color: #A2A6B0;
+   line-height: 1.4;
+   width: 430px;
+   height: 50px;
+   padding: 0px 17px;
+}
+.customers__footer {
+   margin: 30px 0 0 0;
+   display: flex;
+   gap: 25px;
+   align-items: center;
+}
+.footer {
+}
+.footer__click {
+   cursor: pointer;
+   color: #fff;
+   background: #0156FF;
+   border-radius: 50px; 
+   text-align: center;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 1.5;
+   padding: 10px 25px;
+}
+.footer__link {
+   font-size: 14px;
+   line-height: 1.5;
+   color: #0156FF;
+}
